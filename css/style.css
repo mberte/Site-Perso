@@ -40,6 +40,10 @@ p { font-size: 18px; text-align: justify;}
             -o-filter: blur(12px);
             filter: blur(12px);
 }
+.row {
+    margin: 0px;
+    position: absolute;
+}
 .Nav-Circle {
     height: 10px;
     width: 10px;
@@ -72,6 +76,9 @@ p { font-size: 18px; text-align: justify;}
     -webkit-transform:skewX(0deg) translateX(-100%);
     transform: skewX(0deg) translateX(-100%); 
 }
+#fullpage {
+    height: 100%;
+}
 
 .Home {
     height: 100%;
@@ -83,7 +90,7 @@ p { font-size: 18px; text-align: justify;}
 .Header-Home {
     background-color:transparent;
     height: 30%;
-    padding: auto 20%;
+    position: relative;
     
 }
 
@@ -385,7 +392,7 @@ input:focus {
 .MyButton:hover {
     background-color: #33bcf0;
 }
-.Section {
+.section {
     position: relative;
     height: 100%;
     

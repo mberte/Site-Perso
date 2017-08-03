@@ -8,7 +8,7 @@ particlesJS('particles-js',
   {
   "particles": {
     "number": {
-      "value": 80,
+      "value": 50,
       "density": {
         "enable": true,
         "value_area": 800
@@ -123,8 +123,10 @@ $(window).ready(function(){
     Projects = GetProjects();
     
 });
+$(document).ready(function() {
+	$('#fullpage').fullpage({scrollBar:true});
+});
 $(window).on('scroll', parallex);
-$(window).on('scroll', throttle(ScrollToNextSection, 800));
 $(window).on('scroll', function(){
     var scrollTop;
     scrollTop = $(this).scrollTop();

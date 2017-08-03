@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     
@@ -14,10 +14,12 @@
     <link rel="stylesheet" href="css/MenuStyle.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.min.css" />
     <!--script-->
     <script src="js/Projects.json"></script>
     <script src="js/modernizr.js"></script>
     <script src="js/underscore.js"></script>
+    
 
     
     <title>Mathieu Berte Creation</title>
@@ -60,259 +62,270 @@
         <span id="Section7-Circle" class="Nav-Circle"></span>
     </div>
     <div id="WhiteShape" class="WhiteShape-home"></div>
-    <section id="Home" class="container-fluid Home">
-        <!--Home-->
-        <div id="particles-js"></div>
-        <!-- particles -->
-        <script src="js/particles.min.js"></script>
-        <script src="js/app.js"></script>
-        <div class="container Header-Home Vertical-Align" id="HomeContainer">
-            <h1 class="Text-white animated fadeInUp ">Mathieu Berte</h1>
-            <h2 class="Text-white animated fadeInUp "><span style="color: #33bcf0;">Connect</span> your industry and customers to the Digital</h2>
-            <p><a class="btn btn-primary btn-lg MyButton" onclick="AllerA('#About-Me')" role="button">Learn more</a></p>  
-        </div>
-
-
-    </section>
-    <section id="About-Me" class="container-fluid Section">
-        <!--About Me-->
+    <div id="fullpage">
         
-        <div class="col-md-3 col-md-offset-1 Vertical-Align" id="AboutMeCtn">
-            <h1 class="Text-blue">About Me</h1>
-            <h2 class="Text-cyan">Product Design Engineer</h2>
-            <p class="Text-blue">I'm a product design engineer passionate by innovation and Digital. I’m curious about technologies, design and disruptive solutions which change the way we live. I use this passion and curiosity to propose solutions and new business to companies I’m working with. This web site presents a small part of what I can do so don’t hesitate to contact me if you need more information.</p>  
-        </div>
-        <div class="col-md-4 col-md-offset-3  Vertical-Align">
-            <blockquote class="blockquote">
-                <p class="mb-0 Text-white">Dream the impossible — and go out and make it happen. I walked on the moon. What can't you do?</p>
-                <footer class="blockquote-footer">Gene Cernan | <cite title="Source Title">Last man on the moon</cite></footer>
-            </blockquote>
-            <blockquote class="blockquote">
-                <p class="mb-0"></p>
-            </blockquote>
-        </div>
-    </section>
-    <section id="Objectives" class="container-fluid Section">
-        <!--Objectives-->
-        <div class="col-md-3 col-md-offset-1 Vertical-Align" id="ObjectiveCtn">
-            <h1 class="Text-blue">Objective</h1>
-            <h2 class="Text-cyan">Be at the heart of the Digital Transformation</h2>
-            <p class="Text-blue">The Digital transformation disrupts every business and traditional sectors like engineering. I want to be at the heart of this transformation to create new business opportunities and add more value to traditional products and services. My engineering background and my passion for digital and business are the key to understand people with different background and help them to work as a team.</p>  
-        </div>
-        <div class="col-md-4 col-md-offset-3 Vertical-Align" id="ObjectiveSchema">
-            <div class=" SchemaContainer">
-                <div class="Circle-Objective " style="top: 1%; left: 25%;">
-                    <div class="Circle-Text" >Digital</div>
-                </div>
-                <div class="Circle-Objective " style="top: 37%; left: 4.22%;">
-                    <div class="Circle-Text">Engineering</div>
-                </div>
-                <div class="Circle-Objective" style="top: 37%; left: 45.78%;">
-                    <div class="Circle-Text">Business</div>
-                </div>
+        <section id="Home" class="container-fluid Home section">
+            <!--Home-->
+            <div id="particles-js"></div>
+            <!-- particles -->
+            <script src="js/particles.min.js"></script>
+            <div class="container Header-Home" id="HomeContainer">
+                <h1 class="Text-white animated fadeInUp ">Mathieu Berte</h1>
+                <h2 class="Text-white animated fadeInUp "><span style="color: #33bcf0;">Connect</span> your industry and customers to the Digital</h2>
+                <p><a class="btn btn-primary btn-lg MyButton" onclick="AllerA('#About-Me')" role="button">Learn more</a></p>  
             </div>
-        </div>
-    </section>
-    <section id="Approch" class="container-fluid Section">
-        <!--Approch-->
-        <div class="col-md-3 col-md-offset-1 Vertical-Align" id="ApprochCtn">
-            <h1 class="Text-white">Approach</h1>
-            <h2 class="Text-cyan">Design Thinking</h2>
-            <p class="Text-white">To design the best product, I believe that technologies have to be associated with a great user experience. During innovation process, I’m using the design thinking methodology to understand what issues my customers are facing, defined the challenges, ideate and find concepts. At the end, I iterate back and force between prototyping and testing with end users to quickly find the best solution.</p>  
-        </div>
-        <div class="col-md-6 col-md-offset-1 Vertical-Align" id="ApprochSchema">
-            <div class=" SchemaContainer">
-                <div class="Circle-Approch" style="top: 12%; left: -15%;">
-                    <div class="Circle-Text-Approch">Empathy</div>
-                </div>
-                <div class="fleche" style="top: 53%; left: 5%; transform: rotate(60deg);">
-                    <div class="trait-fleche"></div>
-                    <div class="Triangle-fleche"></div>
-                </div>
-                <div class="Circle-Approch" style="top: 58%; left: 10%;">
-                    <div class="Circle-Text-Approch">Definition</div>
-                </div>
-                <div class="fleche" style="top: 48%; left: 30%; transform: rotate(-60deg);">
-                    <div class="trait-fleche"></div>
-                    <div class="Triangle-fleche"></div>
-                </div>
-                <div class="Circle-Approch" style="top: 12%; left: 35%;">
-                    <div class="Circle-Text-Approch">Ideation</div>
-                </div>
-                <div class="fleche" style="top: 53%; left: 55%; transform: rotate(60deg);">
-                    <div class="trait-fleche"></div>
-                    <div class="Triangle-fleche"></div>
-                </div>
-                <div class="Circle-Approch" style="top: 58%; left: 60%;">
-                    <div class="Circle-Text-Approch">Prototype</div>
-                </div>
-                <div class="fleche" style="top: 51%; left: 80%; transform: rotate(-60deg);">
-                    <div class="Triangle-fleche-double"></div>
-                    <div class="trait-fleche" style="width: calc(100% - 50px);"></div>
-                    <div class="Triangle-fleche"></div>
-                    
-                </div>
-                <div class="Circle-Approch" style="top: 12%; left: 85%;">
-                    <div class="Circle-Text-Approch">Test</div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="Skills" class="container-fluid Section">
-        <!--Skills-->
-        <div class="col-md-4 col-md-offset-1 Vertical-Align">
-            <h1 class="Text-blue">Skills</h1>
-            <h2 class="Text-cyan">Multi Disciplines capabilities</h2>
-            <p class="Text-blue">As a mechanical engineer, I know how to design systemic solutions. My passion and curiosity help me to have multidisciplinary skills. Thanks to massive open online courses (MOOC), I’ve learned different programing languages and methodologies to develop my own web sites, desktop & mobile apps or IOT platform. I need to learn every day and question all the time my skills and the way I work to be better. I’m not an expert in all technologies I’ve learnt but my background helps me to prototype solutions and work great with software or electrical engineers, designers and business men.</p>  
-        </div>
-        <div class="col-md-6 col-md-offset-1 col-lg-5 col-lg-offset-2 Vertical-Align" id="MainSkillsCtn">
-                <div class="col-md-5 Skill-Container">
-                    <img class="Skills-icon" src="images/Product Design.svg"/>
-                    <h2 class="Text-cyan Skill-Title">Product Design</h2>
-                    <p class="Text-white Skills-font">From the specification to production, I use design thinking and value analysis to define product functions answering to customer needs. My knowledge in mechanical, electronical and software engineering allow me to propose solutions and understand those of other team members.</p>
-                </div>
-                <div class="col-md-5 col-md-offset-1 Skill-Container">
-                    <img class="Skills-icon" src="images/IOT.svg"/>
-                    <h2 class="Text-cyan Skill-Title">IOT</h2>
-                    <p class="Text-white Skills-font">I design my own IOT solutions from the hardware to the user interfaces and data management in the cloud. In addition of the technical layer, I propose new services with great user experience using IOT data and remote monitoring to add more value.</p>
-                </div>
-                <div class="col-md-5 Skill-Container">
-                    <img class="Skills-icon" src="images/Project Managment.svg"/>
-                    <h2 class="Text-cyan Skill-Title">Project Managment</h2>
-                    <p class="Text-white Skills-font">I know how to manage complex industrial and multidiscipline projects. As a product owner or classic project manager, I manage quality and cost to give customers the right product on time. I know how to transform business goal in technical specifications.</p>
-                </div>
-                <div class="col-md-5 col-md-offset-1 Skill-Container">
-                    <img class="Skills-icon" src="images/Customer focus.svg"/>
-                    <h2 class="Text-cyan Skill-Title">Customer Focus</h2>
-                    <p class="Text-white Skills-font">When I design a product, I always take a step back to be sure we don’t forget our end users and customers. We don’t create products for us but for other people so for me, it’s important to be sure that what we design is what they need.</p>
-                </div>
-        </div>
-        
-    </section>
-    <section id="Projects" class="container-fluid Section">
-        <!--Projects-->
-        <div class="col-md-3 col-md-offset-1 Vertical-Align" id="Project-Main">
-            <h1 class="Text-blue">Projects</h1>
-            <h2 class="Text-cyan">Creations and Design</h2>
-            
-        </div>
-        <div class="col-md-4 Projects-Container">
-            <div class="timeLineMainLine"></div>
-            <div class="Project-white " >
-                <div class=" Project-label Vertical-Align" onclick="PaintProject(1)">
-                    <h2 class="Text-cyan">2009</h2>
-                    <p class="Text-blue">Wheel Motor</p>
-                    <p>Mechanical</p>
-                </div>
-                <div class="TimeLineHorCont Vertical-Align ">
-                    <div class="TimelineHorizLine"></div>
-                    <div class="TimelineDot"></div>
-                </div>
-            </div>
-            <div class="Project-Blue">
-                <div class="TimeLineHorCont Vertical-Align">
-                    <div class="TimelineDot"></div>
-                    <div class="TimelineHorizLine"></div>
-                </div>
-                <div class=" Project-label Vertical-Align"  onclick="PaintProject(2)">
-                    <h2 class="Text-cyan">2012</h2>
-                    <p class="Text-white">CAD Configurator</p>
-                    <p class="Text-grey">Application</p>
-                </div>
-                
-            </div>
-            <div class="Project-white">
-                <div class=" Project-label Vertical-Align" onclick="PaintProject(3)">
-                    <h2 class="Text-cyan">2013</h2>
-                    <p class="Text-blue">3D Printer</p>
-                    <p>Mechanical</p>
-                </div>
-                <div class="TimeLineHorCont Vertical-Align ">
-                    <div class="TimelineHorizLine"></div>
-                    <div class="TimelineDot"></div>
-                </div>
-            </div>
-            <div class="Project-Blue">
-                <div class="TimeLineHorCont Vertical-Align ">
-                    <div class="TimelineDot"></div>
-                    <div class="TimelineHorizLine"></div>
-                </div>
-                <div class=" Project-label Vertical-Align" onclick="PaintProject(4)">
-                    <h2 class="Text-cyan">2016</h2>
-                    <p class="Text-white">Connected Chiller</p>
-                    <p class="Text-grey">Internet of Things</p>
-                </div>
-            </div>
-            <div class="Project-white">
-                <div class=" Project-label Vertical-Align" onclick="PaintProject(5)">
-                    <h2 class="Text-cyan">2016</h2>
-                    <p class="Text-blue">Publication Wizard</p>
-                    <p>Application</p>
-                </div>
-                <div class="TimeLineHorCont Vertical-Align ">
-                    <div class="TimelineHorizLine"></div>
-                    <div class="TimelineDot"></div>
-                </div>
-            </div>
-            <div class="Project-Blue">
-                <div class="TimeLineHorCont Vertical-Align ">
-                    <div class="TimelineDot"></div>
-                    <div class="TimelineHorizLine"></div>
-                </div>
-                <div class=" Project-label Vertical-Align" onclick="PaintProject(6)">
-                    <h2 class="Text-cyan">2016</h2>
-                    <p class="Text-white">Connected Planter</p>
-                    <p class="Text-grey">Internet of Things</p>
-                </div>
-                
-            </div>
-        </div>
-        <div class="col-md-3 Vertical-Align">
-            <img id="Project-Img" src="images/Wheel Motor.png">
-            <h2 class="Text-cyan" id="Project-Title">Wheel Motor</h2>
-            <p class="Text-white" id="Project-Description">Lorem ipsum dolor sit amet, ferri dicam essent est cu, te pro velit tantas, ius ne dicta summo feugiat. Malis comprehensam ad qui, ut sea menandri rationibus</p>
 
 
-        </div>
-    </section>
-    <section id="Contact-Me" class="container-fluid Section">
-        <!--Contact me-->
-        <div class="col-md-offset-1  col-md-3 Contact-Main Vertical-Align">
-            <h1 class="Text-blue">Contact Me</h1>
-            <div class="social">
-                <img class="Social-Btn" src="images/linkedin-btn.svg"/>
-                <img class="Social-Btn" src="images/twitter-btn.svg">         
+        </section>
+        <section id="About-Me" class="container-fluid section">
+            <!--About Me-->
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1 Vertical-Align" id="AboutMeCtn">
+                    <h1 class="Text-blue">About Me</h1>
+                    <h2 class="Text-cyan">Product Design Engineer</h2>
+                    <p class="Text-blue">I'm a product design engineer passionate by innovation and Digital. I’m curious about technologies, design and disruptive solutions which change the way we live. I use this passion and curiosity to propose solutions and new business to companies I’m working with. This web site presents a small part of what I can do so don’t hesitate to contact me if you need more information.</p>  
+                </div>
+                <div class="col-md-4 col-md-offset-3 Vertical-Align">
+                    <blockquote class="blockquote">
+                        <p class="mb-0 Text-white">Dream the impossible — and go out and make it happen. I walked on the moon. What can't you do?</p>
+                        <footer class="blockquote-footer">Gene Cernan | <cite title="Source Title">Last man on the moon</cite></footer>
+                    </blockquote>
+                    <blockquote class="blockquote">
+                        <p class="mb-0"></p>
+                    </blockquote>
+                </div>
             </div>
-            <div class="social">
-            <form>
-                    <div class="Ctrl">
-                        <img class="Icon" src="images/Name.svg"/>
-                        <input type="text" name="name" placeholder="Enter your name">
+        </section>
+        <section id="Objectives" class="container-fluid section">
+            <!--Objectives-->
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1 Vertical-Align" id="ObjectiveCtn">
+                    <h1 class="Text-blue">Objective</h1>
+                    <h2 class="Text-cyan">Be at the heart of the Digital Transformation</h2>
+                    <p class="Text-blue">The Digital transformation disrupts every business and traditional sectors like engineering. I want to be at the heart of this transformation to create new business opportunities and add more value to traditional products and services. My engineering background and my passion for digital and business are the key to understand people with different background and help them to work as a team.</p>  
+                </div>
+                <div class="col-md-4 col-md-offset-3 Vertical-Align" id="ObjectiveSchema">
+                    <div class=" SchemaContainer">
+                        <div class="Circle-Objective " style="top: 7%; left: 25%;">
+                            <div class="Circle-Text" >Digital</div>
+                        </div>
+                        <div class="Circle-Objective " style="top: 43%; left: 4.22%;">
+                            <div class="Circle-Text">Engineering</div>
+                        </div>
+                        <div class="Circle-Objective" style="top: 43%; left: 45.78%;">
+                            <div class="Circle-Text">Business</div>
+                        </div>
                     </div>
-                    
-                    <div class="Ctrl">
-                        <img class="Icon" src="images/Email.svg"/>
-                        <input type="email" name="email" placeholder="Enter your email">
-                    </div>
-                    
-                    <div class="Ctrl-Message">
-                        <img class="Icon" src="images/Message.svg"/>
-                        <textarea class="form-control" rows="5" id="message" placeholder="Type your messsage"></textarea>
-                    </div>
-                    <button class="Send-Btn"><img src="images/Send.svg"></button>
-            </form>
+                </div>
             </div>
-        </div>
-        <div class="Contact-Map Contact-Main col-md-6 col-md-offset-2">
-            <div id="map" class="col-xd-12"></div>
+        </section>
+        <section id="Approch" class="container-fluid section">
+            <!--Approch-->
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1 Vertical-Align" id="ApprochCtn">
+                    <h1 class="Text-white">Approach</h1>
+                    <h2 class="Text-cyan">Design Thinking</h2>
+                    <p class="Text-white">To design the best product, I believe that technologies have to be associated with a great user experience. During innovation process, I’m using the design thinking methodology to understand what issues my customers are facing, defined the challenges, ideate and find concepts. At the end, I iterate back and force between prototyping and testing with end users to quickly find the best solution.</p>  
+                </div>
+                <div class="col-md-6 col-md-offset-1 Vertical-Align" id="ApprochSchema">
+                    <div class=" SchemaContainer">
+                        <div class="Circle-Approch" style="top: 12%; left: -15%;">
+                            <div class="Circle-Text-Approch">Empathy</div>
+                        </div>
+                        <div class="fleche" style="top: 53%; left: 5%; transform: rotate(60deg);">
+                            <div class="trait-fleche"></div>
+                            <div class="Triangle-fleche"></div>
+                        </div>
+                        <div class="Circle-Approch" style="top: 58%; left: 10%;">
+                            <div class="Circle-Text-Approch">Definition</div>
+                        </div>
+                        <div class="fleche" style="top: 48%; left: 30%; transform: rotate(-60deg);">
+                            <div class="trait-fleche"></div>
+                            <div class="Triangle-fleche"></div>
+                        </div>
+                        <div class="Circle-Approch" style="top: 12%; left: 35%;">
+                            <div class="Circle-Text-Approch">Ideation</div>
+                        </div>
+                        <div class="fleche" style="top: 53%; left: 55%; transform: rotate(60deg);">
+                            <div class="trait-fleche"></div>
+                            <div class="Triangle-fleche"></div>
+                        </div>
+                        <div class="Circle-Approch" style="top: 58%; left: 60%;">
+                            <div class="Circle-Text-Approch">Prototype</div>
+                        </div>
+                        <div class="fleche" style="top: 51%; left: 80%; transform: rotate(-60deg);">
+                            <div class="Triangle-fleche-double"></div>
+                            <div class="trait-fleche" style="width: calc(100% - 50px);"></div>
+                            <div class="Triangle-fleche"></div>
+                            
+                        </div>
+                        <div class="Circle-Approch" style="top: 12%; left: 85%;">
+                            <div class="Circle-Text-Approch">Test</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Skills" class="container-fluid section">
+            <!--Skills-->
+            <div class="row">
+                <div class="col-md-4 col-md-offset-1 Vertical-Align">
+                    <h1 class="Text-blue">Skills</h1>
+                    <h2 class="Text-cyan">Multi Disciplines capabilities</h2>
+                    <p class="Text-blue">As a mechanical engineer, I know how to design systemic solutions. My passion and curiosity help me to have multidisciplinary skills. Thanks to massive open online courses (MOOC), I’ve learned different programing languages and methodologies to develop my own web sites, desktop & mobile apps or IOT platform. I need to learn every day and question all the time my skills and the way I work to be better. I’m not an expert in all technologies I’ve learnt but my background helps me to prototype solutions and work great with software or electrical engineers, designers and business men.</p>  
+                </div>
+                <div class="col-md-6 col-md-offset-1 col-lg-5 col-lg-offset-2 Vertical-Align" id="MainSkillsCtn">
+                        <div class="col-md-5 Skill-Container">
+                            <img class="Skills-icon" src="images/Product Design.svg"/>
+                            <h2 class="Text-cyan Skill-Title">Product Design</h2>
+                            <p class="Text-white Skills-font">From the specification to production, I use design thinking and value analysis to define product functions answering to customer needs. My knowledge in mechanical, electronical and software engineering allow me to propose solutions and understand those of other team members.</p>
+                        </div>
+                        <div class="col-md-5 col-md-offset-1 Skill-Container">
+                            <img class="Skills-icon" src="images/IOT.svg"/>
+                            <h2 class="Text-cyan Skill-Title">IOT</h2>
+                            <p class="Text-white Skills-font">I design my own IOT solutions from the hardware to the user interfaces and data management in the cloud. In addition of the technical layer, I propose new services with great user experience using IOT data and remote monitoring to add more value.</p>
+                        </div>
+                        <div class="col-md-5 Skill-Container">
+                            <img class="Skills-icon" src="images/Project Managment.svg"/>
+                            <h2 class="Text-cyan Skill-Title">Project Managment</h2>
+                            <p class="Text-white Skills-font">I know how to manage complex industrial and multidiscipline projects. As a product owner or classic project manager, I manage quality and cost to give customers the right product on time. I know how to transform business goal in technical specifications.</p>
+                        </div>
+                        <div class="col-md-5 col-md-offset-1 Skill-Container">
+                            <img class="Skills-icon" src="images/Customer focus.svg"/>
+                            <h2 class="Text-cyan Skill-Title">Customer Focus</h2>
+                            <p class="Text-white Skills-font">When I design a product, I always take a step back to be sure we don’t forget our end users and customers. We don’t create products for us but for other people so for me, it’s important to be sure that what we design is what they need.</p>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section id="Projects" class="container-fluid section">
+            <!--Projects-->
+                <div class="col-md-3 col-md-offset-1 Vertical-Align" id="Project-Main">
+                    <h1 class="Text-blue">Projects</h1>
+                    <h2 class="Text-cyan">Creations and Design</h2>
+                    
+                </div>
+                <div class="col-md-4 Projects-Container">
+                    <div class="timeLineMainLine"></div>
+                    <div class="Project-white " >
+                        <div class=" Project-label Vertical-Align" onclick="PaintProject(1)">
+                            <h2 class="Text-cyan">2009</h2>
+                            <p class="Text-blue">Wheel Motor</p>
+                            <p>Mechanical</p>
+                        </div>
+                        <div class="TimeLineHorCont Vertical-Align">
+                            <div class="TimelineHorizLine"></div>
+                            <div class="TimelineDot"></div>
+                        </div>
+                    </div>
+                    <div class="Project-Blue">
+                        <div class="TimeLineHorCont Vertical-Align">
+                            <div class="TimelineDot"></div>
+                            <div class="TimelineHorizLine"></div>
+                        </div>
+                        <div class=" Project-label Vertical-Align"  onclick="PaintProject(2)">
+                            <h2 class="Text-cyan">2012</h2>
+                            <p class="Text-white">CAD Configurator</p>
+                            <p class="Text-grey">Application</p>
+                        </div>
+                        
+                    </div>
+                    <div class="Project-white">
+                        <div class=" Project-label Vertical-Align" onclick="PaintProject(3)">
+                            <h2 class="Text-cyan">2013</h2>
+                            <p class="Text-blue">3D Printer</p>
+                            <p>Mechanical</p>
+                        </div>
+                        <div class="TimeLineHorCont Vertical-Align ">
+                            <div class="TimelineHorizLine"></div>
+                            <div class="TimelineDot"></div>
+                        </div>
+                    </div>
+                    <div class="Project-Blue">
+                        <div class="TimeLineHorCont Vertical-Align ">
+                            <div class="TimelineDot"></div>
+                            <div class="TimelineHorizLine"></div>
+                        </div>
+                        <div class=" Project-label Vertical-Align" onclick="PaintProject(4)">
+                            <h2 class="Text-cyan">2016</h2>
+                            <p class="Text-white">Connected Chiller</p>
+                            <p class="Text-grey">Internet of Things</p>
+                        </div>
+                    </div>
+                    <div class="Project-white">
+                        <div class=" Project-label Vertical-Align" onclick="PaintProject(5)">
+                            <h2 class="Text-cyan">2016</h2>
+                            <p class="Text-blue">Publication Wizard</p>
+                            <p>Application</p>
+                        </div>
+                        <div class="TimeLineHorCont Vertical-Align ">
+                            <div class="TimelineHorizLine"></div>
+                            <div class="TimelineDot"></div>
+                        </div>
+                    </div>
+                    <div class="Project-Blue">
+                        <div class="TimeLineHorCont Vertical-Align ">
+                            <div class="TimelineDot"></div>
+                            <div class="TimelineHorizLine"></div>
+                        </div>
+                        <div class=" Project-label Vertical-Align" onclick="PaintProject(6)">
+                            <h2 class="Text-cyan">2016</h2>
+                            <p class="Text-white">Connected Planter</p>
+                            <p class="Text-grey">Internet of Things</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3 Vertical-Align">
+                    <img id="Project-Img" src="images/Wheel Motor.png">
+                    <h2 class="Text-cyan" id="Project-Title">Wheel Motor</h2>
+                    <p class="Text-white" id="Project-Description">Lorem ipsum dolor sit amet, ferri dicam essent est cu, te pro velit tantas, ius ne dicta summo feugiat. Malis comprehensam ad qui, ut sea menandri rationibus</p>
+
+
+                </div>
             
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVAG568zlbxEoRpuyWQTqVLMjvXBA24vc&callback=initMap"
-    async defer></script>
-        </div>
-    </section>
+        </section>
+        <section id="Contact-Me" class="container-fluid section">
+            <!--Contact me-->
+            <div class="col-md-offset-1  col-md-3 Contact-Main Vertical-Align">
+                <h1 class="Text-blue">Contact Me</h1>
+                <div class="social">
+                    <img class="Social-Btn" src="images/linkedin-btn.svg"/>
+                    <img class="Social-Btn" src="images/twitter-btn.svg">         
+                </div>
+                <div class="social">
+                <form>
+                        <div class="Ctrl">
+                            <img class="Icon" src="images/Name.svg"/>
+                            <input type="text" name="name" placeholder="Enter your name">
+                        </div>
+                        
+                        <div class="Ctrl">
+                            <img class="Icon" src="images/Email.svg"/>
+                            <input type="email" name="email" placeholder="Enter your email">
+                        </div>
+                        
+                        <div class="Ctrl-Message">
+                            <img class="Icon" src="images/Message.svg"/>
+                            <textarea class="form-control" rows="5" id="message" placeholder="Type your messsage"></textarea>
+                        </div>
+                        <button class="Send-Btn"><img src="images/Send.svg"></button>
+                </form>
+                </div>
+            </div>
+            <div class="Contact-Map Contact-Main col-md-6 col-md-offset-2">
+                <div id="map" class="col-xd-12"></div>
+                
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVAG568zlbxEoRpuyWQTqVLMjvXBA24vc&callback=initMap"
+            async defer></script>
+            </div>
+            
+        </section>
+    </div>
 
 
     <script src="js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
     <script src="js/main-Menu.js"></script>
     <script src="js/main.js"></script>
     
