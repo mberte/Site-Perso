@@ -7,7 +7,7 @@ h1 { font-size: 64px;}
 h2 { font-size: 36px; margin: 30px 0px;}
 h3 { font-size: 26px;}
 
-p { font-size: 16px; text-align: justify;}
+p { font-size: 18px; text-align: justify;}
 
 #logo {
     width: 150px;
@@ -25,27 +25,25 @@ p { font-size: 16px; text-align: justify;}
     height: 20%;
     z-index: 2;
 }
-#Nav-Progress-back {
-    position: fixed;
-    top: 20%;
-    right: 60px;
-    width: 1px;
-    height: 60%;
-    background-color: #414A65;
-    
-}
-#Nav-Progress {
-    position: fixed;
-    top: 20%;
-    right: 60px;
-    width: 1px;
-    background-color: #33bcf0;
-    
+#Nav-Background {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 99;
+    opacity: 0.8;
+    background-color: #282E41;
+    -webkit-filter: blur(12px);
+        -moz-filter: blur(12px);
+        -ms-filter: blur(12px);
+            -o-filter: blur(12px);
+            filter: blur(12px);
 }
 .Nav-Circle {
-    height: 6px;
-    width: 6px;
-    border-radius: 3px;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
     right: 57px;
     position: fixed;
     background-color: #414A65;
@@ -203,7 +201,7 @@ p { font-size: 16px; text-align: justify;}
     text-align: center;
     font-size: 30px;
 }
-.Skills-font{font-size: 14px;}
+.Skills-font{font-size: 16px;}
 .timeLineMainLine {
     position: absolute;
     top: 0px;
@@ -404,6 +402,12 @@ input:focus {
          -o-transform: translateY(-50%);
             transform: translateY(-50%);
 }
+@media only screen and (max-width: 1300px) {
+
+    p { font-size: 16px;}
+    .Skills-font{font-size: 14px;}
+    
+}
 
 @media only screen and (max-width: 992px) {
     h1 { font-size: 56px;}
@@ -420,6 +424,8 @@ input:focus {
     top: 10px;
     left: 60px;
     }
+
+    .Skills-font{font-size: 14px;}
     
 }
 

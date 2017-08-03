@@ -118,11 +118,11 @@ particlesJS('particles-js',
 
 );
 
-
+SetNavCircleColor(1);
 $(window).ready(function(){
     Projects = GetProjects();
     
-})
+});
 $(window).on('scroll', parallex);
 $(window).on('scroll', throttle(ScrollToNextSection, 800));
 $(window).on('scroll', function(){
@@ -300,7 +300,7 @@ $(window).on('scroll', function(){
         for (var i=1;i<= SectionNum;i++) {
         $('#Section'+ i + '-Circle').css('background-color', '#33bcf0');
         }
-            for (var i=SectionNum;i<=7;i++) {
+            for (var i=SectionNum+1;i<=7;i++) {
                 $('#Section'+ i + '-Circle').css('background-color', '#414A65');
             }
             
