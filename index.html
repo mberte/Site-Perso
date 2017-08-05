@@ -11,10 +11,11 @@
     <!--css-->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/MenuStyle.css">
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css" />
+    <link rel="stylesheet" href="css/hamburgers.css">
     <!--script-->
     <script src="js/Projects.json"></script>
     <script src="js/modernizr.js"></script>
@@ -35,32 +36,57 @@
     <img src="images/Logo fini blanc.svg" id="logo"/>
     <img id="Backgound-Image" src="images/homeh.jpg"/>
     
-    <nav class="cd-stretchy-nav">
-		<a class="cd-nav-trigger" href="#0">
-			<span aria-hidden="true"></span>
-		</a>
-
-		<ul id="MenuList">
-			<li><a href="#Home" onclick="MenuClick('#Home')" class="active"><span>Home</span></a></li>
-			<li><a href="#About-Me" onclick="MenuClick('#About-Me')"><span>About Me</span></a></li>
-			<li><a href="#Objectives" onclick="MenuClick('#Objectives')"><span>Objective</span></a></li>
-			<li><a href="#Approch" onclick="MenuClick('#Approch')"><span>Approch</span></a></li>
-			<li><a href="#Skills" onclick="MenuClick('#Skills')"><span>Skills</span></a></li>
-            <li><a href="#Projects" onclick="MenuClick('#Projects')"><span>Projects</span></a></li>
-            <li><a href="#Contact-Me" onclick="MenuClick('#Contact-Me')"><span>Contact Me</span></a></li>
+    <nav class="Custom-nav">
+        <button class="hamburger hamburger--slider" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+		<ul id="menu" class="Vertical-Align">
+			<li data-menuanchor="Home-a">
+                <a href="#Home" onclick="MenuClick('#Home')" class="a-menu">
+                    <span class="Nav-Text Vertical-Align">Home</span>
+                    <div id="Home-Circle" class="Nav-Circle Vertical-Align"></div>
+                </a>
+            </li>
+			<li data-menuanchor="About-Me-a">
+                <a href="#About-Me" onclick="MenuClick('#About-Me')" class="a-menu">
+                    <span class="Nav-Text Vertical-Align">About Me</span>
+                    <div id="About-Me-Circle" class="Nav-Circle Vertical-Align" ></div>
+                </a>
+            </li>
+			<li data-menuanchor="Objectives-a">
+                <a href="#Objectives" onclick="MenuClick('#Objectives')" class="a-menu">
+                    <span class="Nav-Text Vertical-Align">Objective</span>
+                    <div id="Home-Circle" class="Nav-Circle Vertical-Align"></div>
+                </a>
+            </li>
+			<li data-menuanchor="Approach-a">
+                <a href="#Approach" onclick="MenuClick('#Approach')" class="a-menu">
+                    <span class="Nav-Text Vertical-Align">Approach</span>
+                    <div id="Approach-Circle" class="Nav-Circle Vertical-Align"></div>
+                </a>
+            </li>
+			<li data-menuanchor="Skills-a">
+                <a href="#Skills" onclick="MenuClick('#Skills')" class="a-menu">
+                    <span class="Nav-Text Vertical-Align">Skills</span>
+                    <div id="Skills-Circle" class="Nav-Circle Vertical-Align"></div>
+                </a>
+        </li>
+            <li data-menuanchor="Projects-a">
+                <a href="#Projects" onclick="MenuClick('#Projects')" class="a-menu">
+                    <span class="Nav-Text Vertical-Align">Projects</span>
+                    <div id="Projects-Circle" class="Nav-Circle Vertical-Align"></div>
+                </a>
+            </li>
+            <li data-menuanchor="Contact-Me-a">
+                <a href="#Contact-Me" onclick="MenuClick('#Contact-Me')" class="a-menu">
+                    <span class="Nav-Text Vertical-Align">Contact Me</span>
+                    <div id="Contact-Me-Circle" class="Nav-Circle Vertical-Align"></div>
+                </a>
+            </li>
 		</ul>
-
-		<span aria-hidden="true" class="stretchy-nav-bg"></span>
 	</nav>
-    <div id="Nav-progress-Container">
-        <span id="Section1-Circle" class="Nav-Circle"></span>
-        <span id="Section2-Circle" class="Nav-Circle"></span>
-        <span id="Section3-Circle" class="Nav-Circle"></span>
-        <span id="Section4-Circle" class="Nav-Circle"></span>
-        <span id="Section5-Circle" class="Nav-Circle"></span>
-        <span id="Section6-Circle" class="Nav-Circle"></span>
-        <span id="Section7-Circle" class="Nav-Circle"></span>
-    </div>
     <div id="WhiteShape" class="WhiteShape-home"></div>
     <div id="fullpage">
         
@@ -119,8 +145,8 @@
                 </div>
             </div>
         </section>
-        <section id="Approch" class="container-fluid section">
-            <!--Approch-->
+        <section id="Approach" class="container-fluid section">
+            <!--Approach-->
             <div class="row">
                 <div class="col-md-3 col-md-offset-1 Vertical-Align" id="ApprochCtn">
                     <h1 class="Text-white">Approach</h1>
@@ -174,21 +200,21 @@
                     <h2 class="Text-cyan">Multi Disciplines capabilities</h2>
                     <p class="Text-blue">As a mechanical engineer, I know how to design systemic solutions. My passion and curiosity help me to have multidisciplinary skills. Thanks to massive open online courses (MOOC), I’ve learned different programing languages and methodologies to develop my own web sites, desktop & mobile apps or IOT platform. I need to learn every day and question all the time my skills and the way I work to be better. I’m not an expert in all technologies I’ve learnt but my background helps me to prototype solutions and work great with software or electrical engineers, designers and business men.</p>  
                 </div>
-                <div class="col-md-6 col-md-offset-1 col-lg-5 col-lg-offset-2 Vertical-Align" id="MainSkillsCtn">
-                        <div class="col-md-5 Skill-Container">
+                <div class="col-md-6 col-md-offset-1 Vertical-Align" id="MainSkillsCtn">
+                        <a href="#Prod-Design" class="col-md-5 Skill-Container" data-toggle="collapse">
                             <img class="Skills-icon" src="images/Product Design.svg"/>
                             <h2 class="Text-cyan Skill-Title">Product Design</h2>
-                            <p class="Text-white Skills-font">From the specification to production, I use design thinking and value analysis to define product functions answering to customer needs. My knowledge in mechanical, electronical and software engineering allow me to propose solutions and understand those of other team members.</p>
-                        </div>
+                            <p id="Prod-Design" class="Text-white Skills-font collapse">From the specification to production, I use design thinking and value analysis to define product functions answering to customer needs. My knowledge in mechanical, electronical and software engineering allow me to propose solutions and understand those of other team members.</p>
+                        </a>
                         <div class="col-md-5 col-md-offset-1 Skill-Container">
                             <img class="Skills-icon" src="images/IOT.svg"/>
                             <h2 class="Text-cyan Skill-Title">IOT</h2>
                             <p class="Text-white Skills-font">I design my own IOT solutions from the hardware to the user interfaces and data management in the cloud. In addition of the technical layer, I propose new services with great user experience using IOT data and remote monitoring to add more value.</p>
                         </div>
                         <div class="col-md-5 Skill-Container">
-                            <img class="Skills-icon" src="images/Project Managment.svg"/>
+                            <img class="Skills-icon" src="images/Project managment.svg"/>
                             <h2 class="Text-cyan Skill-Title">Project Managment</h2>
-                            <p class="Text-white Skills-font">I know how to manage complex industrial and multidiscipline projects. As a product owner or classic project manager, I manage quality and cost to give customers the right product on time. I know how to transform business goal in technical specifications.</p>
+                            <p class="Text-white Skills-font">I know how to manage complex industrial and multidiscipline projects. As a product owner or classic project manager, I manage quality and cost to give customers the right product on time. I know how to transform business goal in technical solutions</p>
                         </div>
                         <div class="col-md-5 col-md-offset-1 Skill-Container">
                             <img class="Skills-icon" src="images/Customer focus.svg"/>
@@ -325,7 +351,12 @@
 
 
     <script src="js/jquery-2.1.1.js"></script>
-    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+    <script>
+        if (screen && screen.width > 768) {
+        document.write('<script type="text/javascript" src="js/jquery.fullpage.min.js"><\/script>');
+        }
+    </script>
+    
     <script src="js/main-Menu.js"></script>
     <script src="js/main.js"></script>
     

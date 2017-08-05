@@ -8,7 +8,7 @@ particlesJS('particles-js',
   {
   "particles": {
     "number": {
-      "value": 50,
+      "value": 70,
       "density": {
         "enable": true,
         "value_area": 800
@@ -117,14 +117,27 @@ particlesJS('particles-js',
     }
 
 );
+// Look for .hamburger
+  var hamburger = document.querySelector(".hamburger");
+  var Nav = document.querySelector("nav");
+  var Nav_a = document.querySelectorAll(".a-menu");
+  var Nav_Circle = document.querySelectorAll(".Nav-Circle");
+  var Nav_text = document.querySelectorAll(".Nav-Text")
 
+  // On click
+  hamburger.addEventListener("click", function() {
+    ToggleMenu();
+  });
 SetNavCircleColor(1);
 $(window).ready(function(){
     Projects = GetProjects();
     
 });
 $(document).ready(function() {
-	$('#fullpage').fullpage({scrollBar:true});
+	$('#fullpage').fullpage({
+        menu: '#menu',
+        anchors: ['Home-a', 'About-Me-a', 'Objectives-a', 'Approach-a', 'Skills-a', 'Projects-a', 'Contact-Me-a'],
+        scrollBar:true});
 });
 $(window).on('scroll', parallex);
 $(window).on('scroll', function(){
@@ -274,8 +287,12 @@ $(window).on('scroll', function(){
         Menu = true;
         console.log('MenuClick : ' + Menu);  
         AllerA(Element);
-
+        
+        if(hamburger.classList.contains('is-active')){
+            ToggleMenu();
         }
+    }
+        
     function AllerA (Element) {
         $("html, body").animate({
             scrollTop: $(Element).offset().top
@@ -475,7 +492,7 @@ $(window).on('scroll', function(){
         }
     function GetProjects() {
         
-        $.getJSON("http://mathieubertecreations.com/Site-Perso/js/Projects.json", function(data){
+        $.getJSON("https://mathieubertecreations.com/Site-Perso/js/Projects.json", function(data){
             Projects= data;
             console.log(Projects);
         })
@@ -485,5 +502,22 @@ $(window).on('scroll', function(){
         $('#Project-Img').attr("src", Project[0].Picture);
         $('#Project-Title').html(Project[0].Title);
         $('#Project-Description').html(Project[0].Description);
+    }
+    function ToggleMenu() {
+   
+        hamburger.classList.toggle("is-active");
+        Nav.classList.toggle("nav-menu-open");
+        var i;
+        for (i = 0; i < Nav_a.length; i++) {
+            Nav_a[i].classList.toggle("a-menu-open");
+        }
+        for (i = 0; i <  Nav_text.length; i++) {
+            Nav_text[i].classList.toggle("Nav-Text-menu");
+        }
+        for (i = 0; i < Nav_Circle.length; i++) {
+            Nav_Circle[i].classList.toggle("Nav-Circle-menu");
+        }
+        Nav_a.classList.toggle("a-menu-open");
+        
     }
     
