@@ -42,47 +42,47 @@
                 <span class="hamburger-inner"></span>
             </span>
         </button>
-		<ul id="menu" class="Vertical-Align">
+		<ul id="menu" class="xs-menu">
 			<li data-menuanchor="Home-a">
                 <a href="#Home" onclick="MenuClick('#Home')" class="a-menu">
-                    <span class="Nav-Text Vertical-Align">Home</span>
-                    <div id="Home-Circle" class="Nav-Circle Vertical-Align"></div>
+                    <span class="Nav-Text">Home</span>
+                    <div id="Home-Circle" class="Nav-Circle"></div>
                 </a>
             </li>
 			<li data-menuanchor="About-Me-a">
                 <a href="#About-Me" onclick="MenuClick('#About-Me')" class="a-menu">
-                    <span class="Nav-Text Vertical-Align">About Me</span>
-                    <div id="About-Me-Circle" class="Nav-Circle Vertical-Align" ></div>
+                    <span class="Nav-Text">About Me</span>
+                    <div id="About-Me-Circle" class="Nav-Circle" ></div>
                 </a>
             </li>
 			<li data-menuanchor="Objectives-a">
                 <a href="#Objectives" onclick="MenuClick('#Objectives')" class="a-menu">
-                    <span class="Nav-Text Vertical-Align">Objective</span>
-                    <div id="Home-Circle" class="Nav-Circle Vertical-Align"></div>
+                    <span class="Nav-Text">Objective</span>
+                    <div id="Home-Circle" class="Nav-Circle"></div>
                 </a>
             </li>
 			<li data-menuanchor="Approach-a">
                 <a href="#Approach" onclick="MenuClick('#Approach')" class="a-menu">
-                    <span class="Nav-Text Vertical-Align">Approach</span>
-                    <div id="Approach-Circle" class="Nav-Circle Vertical-Align"></div>
+                    <span class="Nav-Text">Approach</span>
+                    <div id="Approach-Circle" class="Nav-Circle"></div>
                 </a>
             </li>
 			<li data-menuanchor="Skills-a">
                 <a href="#Skills" onclick="MenuClick('#Skills')" class="a-menu">
-                    <span class="Nav-Text Vertical-Align">Skills</span>
-                    <div id="Skills-Circle" class="Nav-Circle Vertical-Align"></div>
+                    <span class="Nav-Text">Skills</span>
+                    <div id="Skills-Circle" class="Nav-Circle"></div>
                 </a>
         </li>
             <li data-menuanchor="Projects-a">
                 <a href="#Projects" onclick="MenuClick('#Projects')" class="a-menu">
-                    <span class="Nav-Text Vertical-Align">Projects</span>
-                    <div id="Projects-Circle" class="Nav-Circle Vertical-Align"></div>
+                    <span class="Nav-Text">Projects</span>
+                    <div id="Projects-Circle" class="Nav-Circle"></div>
                 </a>
             </li>
             <li data-menuanchor="Contact-Me-a">
                 <a href="#Contact-Me" onclick="MenuClick('#Contact-Me')" class="a-menu">
-                    <span class="Nav-Text Vertical-Align">Contact Me</span>
-                    <div id="Contact-Me-Circle" class="Nav-Circle Vertical-Align"></div>
+                    <span class="Nav-Text">Contact Me</span>
+                    <div id="Contact-Me-Circle" class="Nav-Circle"></div>
                 </a>
             </li>
 		</ul>
@@ -201,11 +201,11 @@
                     <p class="Text-blue">As a mechanical engineer, I know how to design systemic solutions. My passion and curiosity help me to have multidisciplinary skills. Thanks to massive open online courses (MOOC), I’ve learned different programing languages and methodologies to develop my own web sites, desktop & mobile apps or IOT platform. I need to learn every day and question all the time my skills and the way I work to be better. I’m not an expert in all technologies I’ve learnt but my background helps me to prototype solutions and work great with software or electrical engineers, designers and business men.</p>  
                 </div>
                 <div class="col-md-6 col-md-offset-1 Vertical-Align" id="MainSkillsCtn">
-                        <a href="#Prod-Design" class="col-md-5 Skill-Container" data-toggle="collapse">
+                        <div href="#Prod-Design" class="col-md-5 Skill-Container" data-toggle="collapse">
                             <img class="Skills-icon" src="images/Product Design.svg"/>
                             <h2 class="Text-cyan Skill-Title">Product Design</h2>
                             <p id="Prod-Design" class="Text-white Skills-font collapse">From the specification to production, I use design thinking and value analysis to define product functions answering to customer needs. My knowledge in mechanical, electronical and software engineering allow me to propose solutions and understand those of other team members.</p>
-                        </a>
+                        </div>
                         <div class="col-md-5 col-md-offset-1 Skill-Container">
                             <img class="Skills-icon" src="images/IOT.svg"/>
                             <h2 class="Text-cyan Skill-Title">IOT</h2>
@@ -302,7 +302,8 @@
                         
                     </div>
                 </div>
-                <div class="col-md-3 Vertical-Align">
+                <div class="col-md-3 Vertical-Align Project-details Project-details-closed">
+                    <div class="popup-button" onclick="ToggleProjectDetails()">X</div>
                     <img id="Project-Img" src="images/Wheel Motor.png">
                     <h2 class="Text-cyan" id="Project-Title">Wheel Motor</h2>
                     <p class="Text-white" id="Project-Description">Lorem ipsum dolor sit amet, ferri dicam essent est cu, te pro velit tantas, ius ne dicta summo feugiat. Malis comprehensam ad qui, ut sea menandri rationibus</p>

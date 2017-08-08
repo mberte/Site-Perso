@@ -134,10 +134,11 @@ $(window).ready(function(){
     
 });
 $(document).ready(function() {
-	$('#fullpage').fullpage({
-        menu: '#menu',
-        anchors: ['Home-a', 'About-Me-a', 'Objectives-a', 'Approach-a', 'Skills-a', 'Projects-a', 'Contact-Me-a'],
-        scrollBar:true});
+    $('#fullpage').fullpage({
+            menu: '#menu',
+            anchors: ['Home-a', 'About-Me-a', 'Objectives-a', 'Approach-a', 'Skills-a', 'Projects-a', 'Contact-Me-a'],
+            scrollBar:true});
+	
 });
 $(window).on('scroll', parallex);
 $(window).on('scroll', function(){
@@ -227,62 +228,6 @@ $(window).on('scroll', function(){
                 }
             }      
         }
-
-    function ScrollToNextSection(){
-        if (window.matchMedia("(min-width: 768px)").matches) {
-            console.log("ScrolltoNext");
-            var scrollTop = $(this).scrollTop();
-            var windowHeight = $(window).height();
-            var SectionNum=0;
-            var sections= [];
-            $('section').each(function(){
-                sections.push('#' + ($(this).attr('id')));
-            });
-            //particlesJS.enable = false;
-            switch (true) {
-                        case (scrollTop<50):
-                        SectionNum =0
-                        //particlesJS.enable = true;
-                        SetNavCircleColor(1);
-                        break;
-                        case (scrollTop>windowHeight-200 && scrollTop<windowHeight+200):
-                        SectionNum =1;
-                        SetNavCircleColor(2);
-                        break;
-                        case (scrollTop>windowHeight*2-200 && scrollTop<windowHeight*2+200):
-                        SectionNum =2;
-                        SetNavCircleColor(3);
-                        break;
-                        case (scrollTop>windowHeight*3-200 && scrollTop<windowHeight*3+200):
-                        SectionNum =3;
-                        SetNavCircleColor(4);
-                        break;
-                        case (scrollTop>windowHeight*4-200 && scrollTop<windowHeight*4+200):
-                        SectionNum =4;
-                        SetNavCircleColor(5);
-                        break;
-                        case (scrollTop>windowHeight*5-200 && scrollTop<windowHeight*5+200):
-                        SectionNum =5;
-                        break;
-                        case (scrollTop>windowHeight*6-200 && scrollTop<windowHeight*6+200):
-                        SectionNum =6;
-                        break;
-                    }
-                    
-            console.log(SectionNum);
-            console.log(scrollTop);
-            if (scrollTop > OldScrolltop){
-                // downscroll code
-                console.log("downscroll");
-                AllerA(sections[SectionNum+1]);
-            } else {
-                // upscroll code
-                console.log("upscroll");
-            AllerA(sections[SectionNum-1]);
-            }
-            }
-        
-        }
     function MenuClick(Element) {
         Menu = true;
         console.log('MenuClick : ' + Menu);  
@@ -307,14 +252,7 @@ $(window).on('scroll', function(){
             $(Element + ' h1, h2, p').addClass('animated fadeInUp' );
 		
         }
-	function initNavProgress() {
-            var PosProgress = 40;
-            var heightProgress = 20;
-            for (var i=1;i<=7;i++) {
-                $('#Section'+ i + '-Circle').css({top: PosProgress+(i-1)*heightProgress/6 + '%'});
-            }
-	    }
-    
+	
 	function SetNavCircleColor(SectionNum) {
         for (var i=1;i<= SectionNum;i++) {
         $('#Section'+ i + '-Circle').css('background-color', '#33bcf0');
@@ -502,11 +440,13 @@ $(window).on('scroll', function(){
         $('#Project-Img').attr("src", Project[0].Picture);
         $('#Project-Title').html(Project[0].Title);
         $('#Project-Description').html(Project[0].Description);
+        ToggleProjectDetails();
     }
     function ToggleMenu() {
    
         hamburger.classList.toggle("is-active");
         Nav.classList.toggle("nav-menu-open");
+        document.querySelector("#menu").classList.toggle("xs-menu");
         var i;
         for (i = 0; i < Nav_a.length; i++) {
             Nav_a[i].classList.toggle("a-menu-open");
@@ -517,7 +457,10 @@ $(window).on('scroll', function(){
         for (i = 0; i < Nav_Circle.length; i++) {
             Nav_Circle[i].classList.toggle("Nav-Circle-menu");
         }
-        Nav_a.classList.toggle("a-menu-open");
         
+    }
+    function ToggleProjectDetails() {
+        var ProjectDetails = document.querySelector(".Project-details");
+        ProjectDetails.classList.toggle("Project-details-closed");
     }
     

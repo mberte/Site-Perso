@@ -25,12 +25,15 @@ nav {
     position: fixed;
     height: 100%;
     right: 0px;
+    top: 0px;
+    background-color: transparent;
+    transition: background-color 0.6s;
     z-index: 90;
 }
 .nav-menu-open{
     background-color: #282E41;
     opacity: 0.9;
-    
+    transition: background-color 0.6s;
 }
 .a-menu-open {
     height: 100px;
@@ -38,28 +41,6 @@ nav {
 }
 
 
-#Nav-progress-Container {
-    position: fixed;
-    top: 40%;
-    right: 60px;
-    height: 20%;
-    z-index: 2;
-}
-#Nav-Background {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    z-index: 99;
-    opacity: 0.8;
-    background-color: #282E41;
-    -webkit-filter: blur(12px);
-        -moz-filter: blur(12px);
-        -ms-filter: blur(12px);
-            -o-filter: blur(12px);
-            filter: blur(12px);
-}
 .row {
     margin: 0px;
     position: absolute;
@@ -76,7 +57,22 @@ nav a {
     color: white;
     text-align: right;
     font-size: 16px;
-    
+    position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+#menu {
+    position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 #menu li {
     width: 185px;
@@ -106,6 +102,13 @@ nav a {
     border-radius: 4px;
     background-color: #414A65;
     transition: all 0.8s;
+    position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 .Nav-Circle-menu {
     border: 1px solid #33bcf0;
@@ -356,6 +359,10 @@ nav a {
     transition: background-color 0.2s ease;
     cursor: pointer;
 }
+.popup-button {
+    display: none;
+
+}
 #Project-Img {
     width: 100%;
     box-shadow: -1px 2px 80px 5px rgba(188, 188, 188, 0.7); 
@@ -528,7 +535,30 @@ input:focus {
     #Nav-progress-Container {
         display: none;
     }
+    .xs-menu {
+        display: none;
+    }
+
     #WhiteShape {display: none;}
+    .Header-Home {
+    background-color:transparent;
+    height: 30%;
+    position: relative;
+    top: 50%;
+        -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+    
+}
+        .a-menu-open {
+    height: 70px;
+    transition: height 0.6s;
+}
+    .row {
+        position: relative;
+    }
     #About-Me {
         background-color: #fff;
         height: 100%;
@@ -550,15 +580,7 @@ input:focus {
         padding: 15% 0px;
         z-index: 4;
     }
-#HomeContainer {
-    position: relative;
-    top: 40%;
-        -webkit-transform: translateY(-40%);
-       -moz-transform: translateY(-40%);
-        -ms-transform: translateY(-40%);
-         -o-transform: translateY(-40%);
-            transform: translateY(-40%);
-}
+
 
     .Skill-Container {
         transform: skewY(10deg); 
@@ -576,8 +598,8 @@ input:focus {
         padding-bottom: 10%;
     }
     .SchemaContainer {
-        width: 50vh;
-        height: 50vh;
+        width: 40vh;
+        height: 40vh;
         
     }
     #Approch .SchemaContainer {
@@ -610,6 +632,28 @@ input:focus {
         transform: skewX(0deg);
         margin-right: 6px;
     }
+    .Project-details {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-color: #282E41;
+        z-index: 100;
+    }
+    .Project-details-closed {
+        display: none;
+    }
+    
+    .popup-button {
+    display: block;
+    color: #33bcf0;
+    font-size: 16px;
+    float: right;
+    margin-bottom: 20px;
+    padding: 5px 11px;
+    border: 1px solid #33bcf0;
+    border-radius: 20px;
+    
+}
     #Project-Main {
         background-color: #fff;
     }
