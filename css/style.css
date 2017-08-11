@@ -1,7 +1,7 @@
 html {height: 100%; width: 100%;}
 body {height: 100%; width: 100%; background-color: #282E41;}
 
-h1, h2, h3, h4, h5, h6, p, input, textarea {font-family: 'Roboto', sans-serif;font-weight:300;}
+h1, h2, h3, h4, h5, h6, p, input, textarea, a {font-family: 'Roboto', sans-serif;font-weight:300;}
 
 h1 { font-size: 64px;}
 h2 { font-size: 36px; margin: 30px 0px;}
@@ -11,7 +11,10 @@ p { font-size: 18px; text-align: justify;}
 *:focus {
     outline: none;
 }
-
+a:hover {
+    text-decoration: none;
+}
+    
 #logo {
     width: 150px;
     height: 150px;
@@ -247,6 +250,7 @@ nav a {
     text-align: center;
     color: white;
     font-family: 'Roboto', sans-serif;
+    font-weight:300;
     font-size: 20px;
 }
 .fleche {
@@ -274,11 +278,24 @@ nav a {
     border-right:12px solid #33bcf0;
     float: left;
 }
+#MainSkillsCtn {
+    display: flex;
+    flex-wrap: wrap;
+}
 .Skill-Container {
     background-color: #4D5365;
     padding: 25px;
-    height: 40vh;
     margin: 15px;
+    transition: all 0.3s ease;
+}
+.Skill-Container:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    transform: translateY(5px);
+    transition: all 0.3s ease;
+}
+
+.Skill-Container-open {
+    height: 40vh;
 }
 .Skills-icon {
     width: 80px;
@@ -312,7 +329,7 @@ nav a {
     border-radius: 4px;
     background-color: #33bcf0;
 }
-.Projects-Container {
+#Projects-Container {
     height: 100%;
     transform: skewX(-15deg);
 }
@@ -365,7 +382,7 @@ nav a {
 }
 #Project-Img {
     width: 100%;
-    box-shadow: -1px 2px 80px 5px rgba(188, 188, 188, 0.7); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); 
 }
 #Project-Title {
     text-align: center;
@@ -373,41 +390,44 @@ nav a {
 .social {
     width: 100%;
     float: left;
+    margin-left: 30px;
 }
 .Social-Btn {
     height: 50px;
     width: 50px;
     border-radius: 25px;
-    margin: 0px 10px 30px 0px;
+    margin-right: 10px;
     float: left;
     
     box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0); 
     transition: box-shadow 0.2s ease;
 }
 .Social-Btn:hover {
-    box-shadow: 0px 0px 10px 5px rgba(100, 100, 100, 0.7); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);  
     transition: box-shadow 0.2s ease;
 
 }
 .Send-Btn {
     background-color: #33bcf0;
-    height: 50px;
-    width: 50px;
+    height: 40px;
     padding: 0px;
-    border: 0px solid #fff;
-    border-radius: 25px;
+    border-radius: 10px;
+    border: 1px solid #33bcf0;
     box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0); 
     transition: box-shadow 0.2s ease;
 }
 .Send-Btn:hover {
-    box-shadow: 0px 0px 10px 5px rgba(100, 100, 100, 0.7); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); 
     transition: box-shadow 0.2s ease;
 
 }
 .Send-Btn img {
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     margin: 10px;
+}
+.Send-Btn span {
+    margin-right: 20px;
 }
 
 .Ctrl {
@@ -469,6 +489,36 @@ input:focus {
     margin: 0px;
     
 }
+#content {
+    padding: 15px 5px 0px 15px;
+}
+#content h2 {
+    margin: 0px 0px 30px 0px;
+}
+.Map-data-cont {
+    display: flex;
+    margin-bottom: 15px;
+}
+.Map-data-txt {
+    font-size: 14px;
+    margin: auto 10px;
+    text-align: left;
+}
+
+.gm-style-iw {
+   width: 410px !important;
+   top: 15px !important;
+   left: 0 !important;
+   background-color: #282E41;
+   box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+   border-radius: 2px 2px 0 0;
+}
+.Map-data-img {
+    height: 20px;
+    float: left;
+     margin: auto 10px ;
+}
+
 .MyButton {
     background-color: transparent;
     border: 1px solid #33bcf0;
@@ -539,6 +589,9 @@ input:focus {
         display: none;
     }
 
+    .Back-white-xs {
+        background-color: white;
+    }
     #WhiteShape {display: none;}
     .Header-Home {
     background-color:transparent;
@@ -560,16 +613,10 @@ input:focus {
         position: relative;
     }
     #About-Me {
-        background-color: #fff;
         height: 100%;
         
     }
-    #Objectives, #Skills {
-        background-color: #fff;
-        height: auto;
-        
-    }
-    #Approch, #Projects {
+    #Objectives, #Skills, #Approach, #Projects {
         height: auto;
         
     }

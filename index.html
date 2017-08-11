@@ -32,7 +32,7 @@
     
 </head>
 
-<body onload="initNavProgress()">
+<body>
     <img src="images/Logo fini blanc.svg" id="logo"/>
     <img id="Backgound-Image" src="images/homeh.jpg"/>
     
@@ -97,7 +97,7 @@
             <script src="js/particles.min.js"></script>
             <div class="container Header-Home" id="HomeContainer">
                 <h1 class="Text-white animated fadeInUp ">Mathieu Berte</h1>
-                <h2 class="Text-white animated fadeInUp "><span style="color: #33bcf0;">Connect</span> your industry and customers to the Digital</h2>
+                <h2 class="Text-white animated fadeInUp "><span style="color: #33bcf0;">Connect</span> your industry and customers to Digital</h2>
                 <p><a class="btn btn-primary btn-lg MyButton" onclick="AllerA('#About-Me')" role="button">Learn more</a></p>  
             </div>
 
@@ -106,7 +106,7 @@
         <section id="About-Me" class="container-fluid section">
             <!--About Me-->
             <div class="row">
-                <div class="col-md-3 col-md-offset-1 Vertical-Align" id="AboutMeCtn">
+                <div class="col-md-3 col-md-offset-1 Vertical-Align Back-white-xs" id="AboutMeCtn">
                     <h1 class="Text-blue">About Me</h1>
                     <h2 class="Text-cyan">Product Design Engineer</h2>
                     <p class="Text-blue">I'm a product design engineer passionate by innovation and Digital. I’m curious about technologies, design and disruptive solutions which change the way we live. I use this passion and curiosity to propose solutions and new business to companies I’m working with. This web site presents a small part of what I can do so don’t hesitate to contact me if you need more information.</p>  
@@ -124,7 +124,7 @@
         </section>
         <section id="Objectives" class="container-fluid section">
             <!--Objectives-->
-            <div class="row">
+            <div class="row Back-white-xs">
                 <div class="col-md-3 col-md-offset-1 Vertical-Align" id="ObjectiveCtn">
                     <h1 class="Text-blue">Objective</h1>
                     <h2 class="Text-cyan">Be at the heart of the Digital Transformation</h2>
@@ -195,31 +195,39 @@
         <section id="Skills" class="container-fluid section">
             <!--Skills-->
             <div class="row">
-                <div class="col-md-4 col-md-offset-1 Vertical-Align">
+                <div class="col-md-4 col-md-offset-1 Vertical-Align Back-white-xs">
                     <h1 class="Text-blue">Skills</h1>
                     <h2 class="Text-cyan">Multi Disciplines capabilities</h2>
-                    <p class="Text-blue">As a mechanical engineer, I know how to design systemic solutions. My passion and curiosity help me to have multidisciplinary skills. Thanks to massive open online courses (MOOC), I’ve learned different programing languages and methodologies to develop my own web sites, desktop & mobile apps or IOT platform. I need to learn every day and question all the time my skills and the way I work to be better. I’m not an expert in all technologies I’ve learnt but my background helps me to prototype solutions and work great with software or electrical engineers, designers and business men.</p>  
+                    <p class="Text-blue">As a mechanical engineer, I know how to design systemic solutions. My passion and curiosity help me to have multidisciplinary skills. Thanks to massive open online courses (MOOC), I’ve learned different programing languages and methodologies to develop my own web sites, desktop & mobile apps or IOT platform. I need to learn every day and question all the time my skills and the way I work to be better. I’m not an expert in all technologies </p>  
                 </div>
                 <div class="col-md-6 col-md-offset-1 Vertical-Align" id="MainSkillsCtn">
-                        <div href="#Prod-Design" class="col-md-5 Skill-Container" data-toggle="collapse">
-                            <img class="Skills-icon" src="images/Product Design.svg"/>
-                            <h2 class="Text-cyan Skill-Title">Product Design</h2>
+                        <div class="col-md-5 Skill-Container" >
+                            <a href="#Prod-Design" data-toggle="collapse">
+                                <img class="Skills-icon" src="images/Product Design.svg"/>
+                                <h2 class="Text-cyan Skill-Title">Product Design</h2>
+                            </a>
                             <p id="Prod-Design" class="Text-white Skills-font collapse">From the specification to production, I use design thinking and value analysis to define product functions answering to customer needs. My knowledge in mechanical, electronical and software engineering allow me to propose solutions and understand those of other team members.</p>
                         </div>
                         <div class="col-md-5 col-md-offset-1 Skill-Container">
-                            <img class="Skills-icon" src="images/IOT.svg"/>
-                            <h2 class="Text-cyan Skill-Title">IOT</h2>
-                            <p class="Text-white Skills-font">I design my own IOT solutions from the hardware to the user interfaces and data management in the cloud. In addition of the technical layer, I propose new services with great user experience using IOT data and remote monitoring to add more value.</p>
+                            <a href="#IOT" data-toggle="collapse">
+                                <img class="Skills-icon" src="images/IOT.svg"/>
+                                <h2 class="Text-cyan Skill-Title">IOT</h2>
+                            </a>
+                            <p id="IOT" class="Text-white Skills-font collapse">I design my own IOT solutions from the hardware to the user interfaces and data management in the cloud. In addition of the technical layer, I propose new services with great user experience using IOT data and remote monitoring to add more value.</p>
                         </div>
                         <div class="col-md-5 Skill-Container">
-                            <img class="Skills-icon" src="images/Project managment.svg"/>
-                            <h2 class="Text-cyan Skill-Title">Project Managment</h2>
-                            <p class="Text-white Skills-font">I know how to manage complex industrial and multidiscipline projects. As a product owner or classic project manager, I manage quality and cost to give customers the right product on time. I know how to transform business goal in technical solutions</p>
+                            <a href="#Proj-manag" data-toggle="collapse">
+                                <img class="Skills-icon" src="images/Project managment.svg"/>
+                                <h2 class="Text-cyan Skill-Title">Project Managment</h2>
+                            </a>
+                            <p id="Proj-manag" class="Text-white Skills-font collapse">I know how to manage complex industrial and multidiscipline projects. As a product owner or classic project manager, I manage quality and cost to give customers the right product on time. I know how to transform business goal in technical solutions</p>
                         </div>
                         <div class="col-md-5 col-md-offset-1 Skill-Container">
-                            <img class="Skills-icon" src="images/Customer focus.svg"/>
-                            <h2 class="Text-cyan Skill-Title">Customer Focus</h2>
-                            <p class="Text-white Skills-font">When I design a product, I always take a step back to be sure we don’t forget our end users and customers. We don’t create products for us but for other people so for me, it’s important to be sure that what we design is what they need.</p>
+                            <a href="#Customer-focus" data-toggle="collapse">
+                                <img class="Skills-icon" src="images/Customer focus.svg"/>
+                                <h2 class="Text-cyan Skill-Title">Customer Focus</h2>
+                            </a>
+                            <p id="Customer-focus" class="Text-white Skills-font collapse">When I design a product, I always take a step back to be sure we don’t forget our end users and customers. We don’t create products for us but for other people so for me, it’s important to be sure that what we design is what they need.</p>
                         </div>
                 </div>
             </div>
@@ -231,10 +239,10 @@
                     <h2 class="Text-cyan">Creations and Design</h2>
                     
                 </div>
-                <div class="col-md-4 Projects-Container">
+                <div class="col-md-4" id="Projects-Container">
                     <div class="timeLineMainLine"></div>
                     <div class="Project-white " >
-                        <div class=" Project-label Vertical-Align" onclick="PaintProject(1)">
+                        <div class=" Project-label Vertical-Align" onmouseover="PaintProject(1)">
                             <h2 class="Text-cyan">2009</h2>
                             <p class="Text-blue">Wheel Motor</p>
                             <p>Mechanical</p>
@@ -249,7 +257,7 @@
                             <div class="TimelineDot"></div>
                             <div class="TimelineHorizLine"></div>
                         </div>
-                        <div class=" Project-label Vertical-Align"  onclick="PaintProject(2)">
+                        <div class=" Project-label Vertical-Align"  onmouseover="PaintProject(2)">
                             <h2 class="Text-cyan">2012</h2>
                             <p class="Text-white">CAD Configurator</p>
                             <p class="Text-grey">Application</p>
@@ -257,7 +265,7 @@
                         
                     </div>
                     <div class="Project-white">
-                        <div class=" Project-label Vertical-Align" onclick="PaintProject(3)">
+                        <div class=" Project-label Vertical-Align" onmouseover="PaintProject(3)">
                             <h2 class="Text-cyan">2013</h2>
                             <p class="Text-blue">3D Printer</p>
                             <p>Mechanical</p>
@@ -272,14 +280,14 @@
                             <div class="TimelineDot"></div>
                             <div class="TimelineHorizLine"></div>
                         </div>
-                        <div class=" Project-label Vertical-Align" onclick="PaintProject(4)">
+                        <div class=" Project-label Vertical-Align" onmouseover="PaintProject(4)">
                             <h2 class="Text-cyan">2016</h2>
                             <p class="Text-white">Connected Chiller</p>
                             <p class="Text-grey">Internet of Things</p>
                         </div>
                     </div>
                     <div class="Project-white">
-                        <div class=" Project-label Vertical-Align" onclick="PaintProject(5)">
+                        <div class=" Project-label Vertical-Align" onmouseover="PaintProject(5)">
                             <h2 class="Text-cyan">2016</h2>
                             <p class="Text-blue">Publication Wizard</p>
                             <p>Application</p>
@@ -294,8 +302,8 @@
                             <div class="TimelineDot"></div>
                             <div class="TimelineHorizLine"></div>
                         </div>
-                        <div class=" Project-label Vertical-Align" onclick="PaintProject(6)">
-                            <h2 class="Text-cyan">2016</h2>
+                        <div class=" Project-label Vertical-Align" onmouseover="PaintProject(6)">
+                            <h2 class="Text-cyan">2017</h2>
                             <p class="Text-white">Connected Planter</p>
                             <p class="Text-grey">Internet of Things</p>
                         </div>
@@ -316,11 +324,6 @@
             <!--Contact me-->
             <div class="col-md-offset-1  col-md-3 Contact-Main Vertical-Align">
                 <h1 class="Text-blue">Contact Me</h1>
-                <div class="social">
-                    <img class="Social-Btn" src="images/linkedin-btn.svg"/>
-                    <img class="Social-Btn" src="images/twitter-btn.svg">         
-                </div>
-                <div class="social">
                 <form>
                         <div class="Ctrl">
                             <img class="Icon" src="images/Name.svg"/>
@@ -328,7 +331,7 @@
                         </div>
                         
                         <div class="Ctrl">
-                            <img class="Icon" src="images/Email.svg"/>
+                            <img class="Icon" src="images/email-g.svg"/>
                             <input type="email" name="email" placeholder="Enter your email">
                         </div>
                         
@@ -336,9 +339,11 @@
                             <img class="Icon" src="images/Message.svg"/>
                             <textarea class="form-control" rows="5" id="message" placeholder="Type your messsage"></textarea>
                         </div>
-                        <button class="Send-Btn"><img src="images/Send.svg"></button>
+                        <button class="Send-Btn">
+                            <img src="images/Send.svg">
+                            <span class="Text-white">Send</span>
+                        </button>
                 </form>
-                </div>
             </div>
             <div class="Contact-Map Contact-Main col-md-6 col-md-offset-2">
                 <div id="map" class="col-xd-12"></div>
@@ -360,6 +365,7 @@
     
     <script src="js/main-Menu.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     
     <!-- Resource jQuery -->
 </body>
